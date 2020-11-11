@@ -79,6 +79,9 @@ https://templatemo.com/tm-528-elegance
             <div class="section animated-row" data-section="slide01">
                 <div class="section-inner">
                     <div class="welcome-box">
+                        {% for basic in basic_information %}
+                        <img src="{{basic.profile_pics.url}}" class="rounded-circle" alt="Circular Image">
+                        {%endfor%}
                         <span class="welcome-first animate" data-animate="fadeInUp">Hello, welcome to</span>
                         <h1 class="welcome-title animate" data-animate="fadeInUp">Md Joy Islam Portfolio</h1>
                         <div class="scroll-down next-section animate data-animate="fadeInUp""><img src="{% static 'images/mouse-scroll.png' %}" alt=""><span>Scroll Down</span></div>
@@ -164,7 +167,7 @@ https://templatemo.com/tm-528-elegance
                             </div>
                             <div class="skills-row animate" data-animate="fadeInDown">
                                 <div class="row">
-                                    <div class="col-md-8 offset-md-2">   
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>Python</h6>
                                             <div class="skill-bar">
@@ -172,6 +175,8 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar"></div>
                                             </div>          
                                         </div>
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>Django</h6>
                                             <div class="skill-bar">
@@ -179,6 +184,10 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar-2"></div>
                                             </div>          
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>JavaScript</h6>
                                             <div class="skill-bar">
@@ -186,6 +195,8 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar"></div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>Java</h6>
                                             <div class="skill-bar">
@@ -193,6 +204,10 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar"></div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>C</h6>
                                             <div class="skill-bar">
@@ -200,6 +215,8 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar"></div>
                                             </div>          
                                         </div>
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>C++</h6>
                                             <div class="skill-bar">
@@ -207,6 +224,10 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar"></div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>C#</h6>
                                             <div class="skill-bar">
@@ -214,6 +235,8 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar"></div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>PHP</h6>
                                             <div class="skill-bar">
@@ -221,6 +244,10 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar"></div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>HTML CSS</h6>
                                             <div class="skill-bar">
@@ -228,6 +255,8 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar"></div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="skill-item">
                                             <h6>BOOTSTRAP</h6>
                                             <div class="skill-bar">
@@ -235,6 +264,10 @@ https://templatemo.com/tm-528-elegance
                                                 <div class="filled-bar"></div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
                                         <div class="skill-item last-skill">
                                             <h6>Leadership</h6>
                                             <div class="skill-bar">
