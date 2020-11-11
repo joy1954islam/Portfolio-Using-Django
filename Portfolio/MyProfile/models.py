@@ -62,3 +62,14 @@ class Project(models.Model):
 
     def __str__(self):
         return self.projectName
+
+
+class Contact(models.Model):
+    name = models.CharField(max_length=50)
+    email = models.EmailField()
+    phone = models.CharField(max_length=17)
+    message = models.TextField()
+
+    def __str__(self):
+        return self.email
+
