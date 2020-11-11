@@ -50,3 +50,15 @@ class Education(models.Model):
     def full_education_date(self):
         return '{0} - {1}'.format(self.StartDate,self.EndDate)
 
+
+class Project(models.Model):
+    username = models.ForeignKey(User, on_delete=models.CASCADE)
+    projectName = models.CharField(max_length=200, null=True)
+    projectTools = models.CharField(max_length=200, null=True)
+    projectDescription = models.TextField(null=True)
+    projectGithub = models.URLField(null=True,blank=True)
+    projectDemo = models.URLField(null=True,blank=True)
+    projectImage = models.ImageField(upload_to='Project Image',null=True, blank=True)
+
+    def __str__(self):
+        return self.projectName
