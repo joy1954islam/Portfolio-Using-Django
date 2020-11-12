@@ -73,3 +73,12 @@ class Contact(models.Model):
     def __str__(self):
         return self.email
 
+
+class Programming(models.Model):
+    picture = models.ImageField(upload_to='logo',blank=True,null=True)
+    name = models.CharField(max_length=30)
+    Url = models.URLField(null=True,blank=True)
+
+    def __str__(self):
+        return '{0}'.format(self.name)
+

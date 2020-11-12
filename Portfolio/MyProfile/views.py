@@ -1,7 +1,7 @@
 from django.core.mail import send_mail
 from django.forms import forms, ModelForm
 from django.shortcuts import render, redirect
-from .models import Education, Language, Basic_Information, Project, Contact
+from .models import Education, Language, Basic_Information, Project, Contact,Programming
 
 
 # Create your views here.
@@ -12,9 +12,12 @@ class ContactForm(ModelForm):
 
 
 def Home(request):
+
     basic_information = Basic_Information.objects.all()
     education = Education.objects.all()
+    programming = Programming.objects.all()
     project = Project.objects.all()
+
     forms = ContactForm()
     if request.method == "POST":
         forms = ContactForm(request.POST)
@@ -41,8 +44,9 @@ def Home(request):
 
     context = {
         'basic_information': basic_information,
-        'education':education,
-        'project':project,
+        'education': education,
+        'project': project,
+        'programming': programming,
         'forms':forms,
 
     }
